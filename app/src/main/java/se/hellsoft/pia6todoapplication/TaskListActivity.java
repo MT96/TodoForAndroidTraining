@@ -20,11 +20,15 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
 public class TaskListActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+   // public static final String TASKS = "tasks";
+    public static final String KEY_TASKS = "tasks";
 
     private TasksAdapter tasksAdapter;
 
@@ -109,10 +113,13 @@ public class TaskListActivity extends AppCompatActivity
         if (id == R.id.nav_information) {
             Intent IntentInformation = new Intent(this, Information.class);
             this.startActivity(IntentInformation);
+
             //hantera information knappen
         } else if (id == R.id.nav_statistics) {
             //hantera statistics knappenj
             Intent IntentStatistics = new Intent(this, Statistics.class);
+            ArrayList<Task> tasks = new ArrayList<>(TaskStorageHelper.getInstance().getTasks());
+            IntentStatistics.putParcelableArrayListExtra(KEY_TASKS, tasks);
             this.startActivity(IntentStatistics);
         }
 
