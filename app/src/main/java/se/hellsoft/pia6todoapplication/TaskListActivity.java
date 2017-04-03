@@ -109,7 +109,6 @@ public class TaskListActivity extends AppCompatActivity
             // Handle the camera action
         } else if (id == R.id.nav_statistics) {
 
-            System.out.println("bajs");
             /*
         } else if (id == R.id.nav_slideshow) {
 

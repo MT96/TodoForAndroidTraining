@@ -13,4 +13,8 @@
     <string name="hint_description">Description of the task</string>
     <string name="label_completed">Completed</string>
     <string name="label_all_tasks">All tasks</string>
+
+    <string name="title_activity_statistics">Statistics</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
