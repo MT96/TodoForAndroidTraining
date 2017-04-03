@@ -72,6 +72,7 @@ public class TaskDetailActivity extends AppCompatActivity implements View.OnClic
 
     private void deleteTask() {
 
+
     }
 
     private void saveOrCreateTask() {
