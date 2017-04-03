@@ -1,6 +1,7 @@
 package se.hellsoft.pia6todoapplication;
 
 import android.content.Intent;
+import android.icu.text.IDNA;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -106,10 +107,13 @@ public class TaskListActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_information) {
-
+            Intent IntentInformation = new Intent(this, Information.class);
+            this.startActivity(IntentInformation);
             //hantera information knappen
         } else if (id == R.id.nav_statistics) {
             //hantera statistics knappenj
+            Intent IntentStatistics = new Intent(this, Statistics.class);
+            this.startActivity(IntentStatistics);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

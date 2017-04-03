@@ -6,4 +6,19 @@
     android:layout_height="match_parent"
     tools:context="se.hellsoft.pia6todoapplication.Statistics">
 
+    <TextView
+        android:id="@+id/AmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total tasks:"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <TextView
+        android:id="@+id/AmountNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="87dp" />
 </android.support.constraint.ConstraintLayout>
