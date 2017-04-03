@@ -106,14 +106,10 @@ public class TaskListActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_information) {
-            // Handle the camera action
+
+            //hantera information knappen
         } else if (id == R.id.nav_statistics) {
-
-            /*
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-*/
+            //hantera statistics knappen
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
