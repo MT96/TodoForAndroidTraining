@@ -109,7 +109,7 @@ public class TaskListActivity extends AppCompatActivity
 
             //hantera information knappen
         } else if (id == R.id.nav_statistics) {
-            //hantera statistics knappen
+            //hantera statistics knappenj
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
