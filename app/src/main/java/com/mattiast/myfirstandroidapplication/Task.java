@@ -1,4 +1,4 @@
-package se.hellsoft.pia6todoapplication;
+package com.mattiast.myfirstandroidapplication;
 
 import android.os.Parcel;
 import android.os.Parcelable;

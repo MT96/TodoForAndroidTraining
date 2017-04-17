@@ -1,8 +1,7 @@
-package se.hellsoft.pia6todoapplication;
+package com.mattiast.myfirstandroidapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.widget.TextView;
 
 import java.util.Date;

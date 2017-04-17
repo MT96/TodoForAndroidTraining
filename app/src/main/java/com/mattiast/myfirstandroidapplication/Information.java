@@ -1,9 +1,7 @@
-package se.hellsoft.pia6todoapplication;
+package com.mattiast.myfirstandroidapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-import java.util.ArrayList;
 
 public class Information extends AppCompatActivity {
 

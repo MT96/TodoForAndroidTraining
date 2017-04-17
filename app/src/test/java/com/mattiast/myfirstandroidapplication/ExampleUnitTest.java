@@ -1,4 +1,4 @@
-package se.hellsoft.pia6todoapplication;
+package com.mattiast.myfirstandroidapplication;
 
 import org.junit.Test;
 
