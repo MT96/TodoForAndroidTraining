@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">PIA6 TODO Application</string>
-    <string name="title_main">PIA6 TODO Application</string>
+    <string name="app_name">ToDoOrNoToDo</string>
+    <string name="title_main">ToDoOrNoToDo</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -17,4 +17,7 @@
     <string name="title_activity_statistics">Statistics</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="label_ongoing_tasks">Ongoing</string>
+    <string name="label_completed_tasks">Completed</string>
+    <string name="label_archived_tasks">Archived</string>
 </resources>

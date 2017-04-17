@@ -6,6 +6,7 @@
     tools:context="se.hellsoft.pia6todoapplication.TaskDetailActivity">
 
     <!-- TODO: Update blank fragment layout -->
+
     <EditText
         android:id="@+id/title"
         android:layout_width="0dp"
@@ -64,21 +65,49 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
+        android:layout_marginRight="30dp"
         android:layout_marginTop="8dp"
         android:text="Save"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/completed" />
+        app:layout_constraintTop_toBottomOf="@+id/completedTimeStamp" />
 
     <Button
         android:id="@+id/delete_button"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="24dp"
+        android:layout_marginRight="30dp"
         android:layout_marginTop="8dp"
         android:text="Delete"
         app:layout_constraintRight_toLeftOf="@+id/save_button"
-        app:layout_constraintTop_toBottomOf="@+id/completed" />
+        app:layout_constraintTop_toBottomOf="@+id/completedTimeStamp" />
+
+    <TextView
+        android:id="@+id/timeStampView"
+        android:layout_width="197dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/delete_button"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintLeft_toRightOf="@+id/completed"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <TextView
+        android:id="@+id/completedTimeStamp"
+        android:layout_width="195dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintLeft_toRightOf="@+id/completed"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeStampView" />
 
 </android.support.constraint.ConstraintLayout>

@@ -57,6 +57,7 @@ public class Statistics extends AppCompatActivity {
         avgPerDay.setText(String.valueOf(total / days));
 
 
+
     }
 
 }

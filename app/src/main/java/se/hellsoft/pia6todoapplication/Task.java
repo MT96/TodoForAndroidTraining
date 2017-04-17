@@ -46,6 +46,7 @@ public class Task implements Parcelable {
         dest.writeString(description);
         dest.writeByte((byte) (completed ? 1 : 0));
         dest.writeByte((byte) (archived ? 1 : 0));
+
         if (started != null){
             dest.writeLong(started.getTime());
         }else {
@@ -134,9 +135,10 @@ public class Task implements Parcelable {
         if (archived != task.archived) return false;
         if (title != null ? !title.equals(task.title) : task.title != null) return false;
         if (description != null ? description.equals(task.description) : task.description == null) return false;
-        if (started != null ? started.equals(task.started) : task.started == null) return false;
+        return started != null ? started.equals(task.started) : task.started == null;
+        //if (started != null ? started.equals(task.started) : task.started == null) return false;
 
-        return true;
+        //return true;
 
     }
 
@@ -151,6 +153,7 @@ public class Task implements Parcelable {
         return result;
     }
 
+
     @Override
     public  String toString() {
         return "Task{" +
@@ -163,6 +166,4 @@ public class Task implements Parcelable {
                 '}';
 
     }
-
-
 }
